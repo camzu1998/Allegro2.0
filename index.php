@@ -12,27 +12,37 @@
         <script src="mainscript.js"></script>
     </head>
 
-    <body>
+    <body onload="inputs();">
         <div class="container">
             <div class="row header">
-                <h2>Sklep blablabla</h2>
+                <div class="six columns"><img width="50%" src="img/Colgate-Logo.png"> </div>
+                <div class="six columns"><p style="font-size: 20px; margin-top:5%;">Keep smile :)</p></div>
             </div>
             <div class="row">
-                <div class="four columns item"></div>
-                <div class="four columns item"></div>
-                <div class="four columns item"></div>
+                <div class="three columns">
+                    <img class="photo" src="img/ram.jpg"/>
+                    <span class="info">RAM DDR3 4GB</span>
+                    <input type="number" id="iloscRam" class="inputs" value="0"/>
+                </div>
+                <div class="three columns">
+                    <img class="photo" src="img/cpu.jpg"/>
+                    <span class="info">Intel Core I5 4700KUHDQ</span>
+                    <input type="number" id="iloscCPU" class="inputs" value="0"/>
+                </div>
+                <div class="three columns">
+                    <img class="photo" src="img/dysk.png"/>
+                    <span class="info">SEAGEATE BARRACUDA 7200RPM</span>
+                    <input type="number" id="iloscHDD" class="inputs" value="0"/>
+                </div>
+                <div class="three columns">
+                    <img class="photo" src="img/471.jpg"/>
+                    <span class="info">AMD RADEON 1000STOPNI</span>
+                    <input type="number" id="iloscGPU" class="inputs" value="0"/>
+                </div>
             </div>
             <div class="row">
-                <div class="four columns item"></div>
-                <div class="four columns item"></div>
-                <div class="four columns item"></div>
+                <span id="wynik"><script>setInterval(wynik, 250);</script></span>
             </div>
-            <div class="row">
-                <div class="four columns item"></div>
-                <div class="four columns item"></div>
-                <div class="four columns item"></div>
-            </div>
-
         </div>
     </body>
 </html>

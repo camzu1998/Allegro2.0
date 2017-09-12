@@ -8,6 +8,16 @@ body{
     background: black;
     color: antiquewhite;
 }
-.item{
-    margin-right: 2%;
+.header p{
+    font-family: 'Pacifico', sans-serif;
+}
+.photo{
+    opacity: 0.5;
+    width: 100%;
+    margin-top: 4%;
+    transition: opacity 1s;
+}
+.photo:hover{
+    opacity: 1;
+    transition: opacity 1s;
 }
