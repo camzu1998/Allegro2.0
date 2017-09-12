@@ -21,28 +21,30 @@
             <div class="row">
                 <div class="three columns">
                     <img class="photo" src="img/ram.jpg"/>
-                    <span class="info">RAM DDR3 4GB</span>
-                    <input type="number" id="iloscRam" class="inputs" min="0" value="0"/>
+                    <span class="info">RAM DDR3 4GB<br>W magazynie: 200</span>
+                    <input type="number" id="iloscRam" class="inputs" min="0" max="200" value="0"/>
                 </div>
                 <div class="three columns">
                     <img class="photo" src="img/cpu.jpg"/>
-                    <span class="info">Intel Core I5 4700KUHDQ</span>
-                    <input type="number" id="iloscCPU" class="inputs" min="0" value="0"/>
+                    <span class="info">Intel Core I5 4700KUHDQ<br>W magazynie: 324</span>
+                    <input type="number" id="iloscCPU" class="inputs" min="0" max="324" value="0"/>
                 </div>
                 <div class="three columns">
                     <img class="photo" src="img/dysk.png"/>
-                    <span class="info">SEAGEATE BARRACUDA 7200RPM</span>
-                    <input type="number" id="iloscHDD" class="inputs" min="0" value="0"/>
+                    <span class="info">SEAGEATE BARRACUDA 7200RPM<br>W magazynie: 128</span>
+                    <input type="number" id="iloscHDD" class="inputs" min="0" max="128" value="0"/>
                 </div>
                 <div class="three columns">
                     <img class="photo" src="img/471.jpg"/>
-                    <span class="info">AMD RADEON 1000STOPNI</span>
-                    <input type="number" id="iloscGPU" class="inputs" min="0" value="0"/>
+                    <span class="info">AMD RADEON 1000STOPNI<br>W magazynie: 128</span>
+                    <input type="number" id="iloscGPU" class="inputs" min="0" max="128" value="0"/>
                 </div>
             </div>
             <div class="row" style="margin-top:5%;">
                 <div class="six columns">
-                    <span id="wynik"><script>setInterval(wynik, 250);</script></span>
+                    <script>setInterval(wynik, 250);</script>
+                    <span id="wynik"></span><br>
+                    <span id="wynikbv"></span>
                 </div>
                 <div class="six columns">
                     <audio id="player" controls hidden src="sound/cash.wav" ></audio>

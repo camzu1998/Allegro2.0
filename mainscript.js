@@ -21,12 +21,12 @@ function wynik() {
     var wynik1 = iloscCPU+iloscGPU+iloscHDD+iloscRamu;
     var wynik2 = wynik1*vat;
     var wynik = wynik1+wynik2;
+    $('#wynikbv').text("Cena bez vatu: "+wynik1+" zł.");
     $('#wynik').text("Do zapłaty:"+wynik+" zł.");
 }
 
 function last() {
-    var player = $('#player');
-    player.pause();
-    player.play();
-    alert('Dziękuje!!!');
+   /* var player = $('#player');
+    player.play(); */
+    alert('Dziękujemy za zakup!!!');
 }
