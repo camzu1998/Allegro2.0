@@ -22,26 +22,32 @@
                 <div class="three columns">
                     <img class="photo" src="img/ram.jpg"/>
                     <span class="info">RAM DDR3 4GB</span>
-                    <input type="number" id="iloscRam" class="inputs" value="0"/>
+                    <input type="number" id="iloscRam" class="inputs" min="0" value="0"/>
                 </div>
                 <div class="three columns">
                     <img class="photo" src="img/cpu.jpg"/>
                     <span class="info">Intel Core I5 4700KUHDQ</span>
-                    <input type="number" id="iloscCPU" class="inputs" value="0"/>
+                    <input type="number" id="iloscCPU" class="inputs" min="0" value="0"/>
                 </div>
                 <div class="three columns">
                     <img class="photo" src="img/dysk.png"/>
                     <span class="info">SEAGEATE BARRACUDA 7200RPM</span>
-                    <input type="number" id="iloscHDD" class="inputs" value="0"/>
+                    <input type="number" id="iloscHDD" class="inputs" min="0" value="0"/>
                 </div>
                 <div class="three columns">
                     <img class="photo" src="img/471.jpg"/>
                     <span class="info">AMD RADEON 1000STOPNI</span>
-                    <input type="number" id="iloscGPU" class="inputs" value="0"/>
+                    <input type="number" id="iloscGPU" class="inputs" min="0" value="0"/>
                 </div>
             </div>
-            <div class="row">
-                <span id="wynik"><script>setInterval(wynik, 250);</script></span>
+            <div class="row" style="margin-top:5%;">
+                <div class="six columns">
+                    <span id="wynik"><script>setInterval(wynik, 250);</script></span>
+                </div>
+                <div class="six columns">
+                    <audio id="player" controls hidden src="sound/cash.wav" ></audio>
+                    <button onclick="last();">Kupuję!</button>
+                </div>
             </div>
         </div>
     </body>

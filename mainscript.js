@@ -1,4 +1,4 @@
-function inputs(){
+function inputs() {
     $('.inputs').hide(100);
     $('.info').hide(100);
     $('.photo').hover(function(){
@@ -7,7 +7,7 @@ function inputs(){
     });
 
 }
-function wynik(){
+function wynik() {
     const vat = 0.23;
     const cHDD = 120;
     const cGPU = 450;
@@ -22,4 +22,11 @@ function wynik(){
     var wynik2 = wynik1*vat;
     var wynik = wynik1+wynik2;
     $('#wynik').text("Do zapłaty:"+wynik+" zł.");
+}
+
+function last() {
+    var player = $('#player');
+    player.pause();
+    player.play();
+    alert('Dziękuje!!!');
 }
